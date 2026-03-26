@@ -1,35 +1,39 @@
-<!DOCTYPE html>
-<html><head>
+<!doctype html>
+<html>
+  <head>
     <style>
-        .animate-box {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: relative;
-            animation: moverDaEsquerdaParaDireita 20s infinite;
+        h1{
+            color: red;
+            display: inline;
         }
-
-        @keyframes moverDaEsquerdaParaDireita {
-            0% {
-                left: 0;
-                background-color: red;
-            }
-            50% {
-                left: 90%;
-                background-color: blue;
-            }
-            100% {
-                left: 0;
-                background-color: red;
-            }
+        .destaque{
+            color: yellowgreen;
+            font-size: 48px;
+        }
+        #especifico{
+            color: blueviolet;
+            font-size: 10px;
+        }
+        input[type="text"] {
+            border: 5px solid blue;
+        }
+        ul > h2{
+            color: red;
         }
     </style>
-</head>
-<body>
-
-<div class="animate-box"></div>
-
-
-
-</body></html>
+  </head>
+  <body>
+    <h1>Eu sou um Título</h1>
+    <h1 class="destaque">Eu sou um Título</h1>
+    <h1 id="especifico">Eu sou um Título</h1>
+    <h4 class="destaque">Eu sou verde?</h4>
+    <input type="text">
+    <input type="file">
+    <ul>
+        <li>item 1</li>
+        <h2>item 2</h2>
+        <li>item 3</li>
+    </ul>
+    <h2>Teste</h2>
+  </body>
+</html>
